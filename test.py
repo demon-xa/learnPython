@@ -7,4 +7,3 @@ for i in name:
 
 # END
 print(''.join(newName))
-1
