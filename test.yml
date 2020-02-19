@@ -1,0 +1,12 @@
+---
+ - hosts: all
+   gather_facts: True
+   remote_user: root
+
+   tasks:
+    - name: Running commands using shell module
+      shell: multipath -ll
+      register: results  
+  
+   debug:
+      var:results
