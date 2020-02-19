@@ -1,27 +1,24 @@
 import requests
-from bs4 import BeautefulSoup
-import csv
-
+from bs4 import BeautifulSoup
 
 
 def get_html(url):
     r = requests.get(url)
-    if r.ok:
-        return r.text
-    print(r.status_code)
+    return r.text
 
 
-def write_csv(data):
-    with open('cms.cvs', 'a') as f:
-        writer = csv.writer(f)
-        pass
-
-def get_page_data(html):
-    soup = BeautefulSoup(html, 'lxml')
-
-def main()
-    pass
+def get_data(html):
+    soup = BeautifulSoup(html, 'lxml')
+    h1 = soup.find('div', id='home-welcome').find('header').find('h1').text
+    return h1
 
 
-def if __name__ == "__main__":
+
+def main():
+    url = 'https://wordpress.org/'
+    print(get_data(get_html(url)))
+
+
+
+if __name__ == '__main__':
     main()
