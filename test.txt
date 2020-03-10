@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<title>МФИ Софт - Powered by Kayako</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+<script language="Javascript" type="text/javascript">
+var _baseName = 'https://support.mfisoft.ru/staff/index.php?';
+var themepath = "https://support.mfisoft.ru/__swift/themes/__cp/";
+var swiftpath = "https://support.mfisoft.ru/";
+var _swiftPath = "https://support.mfisoft.ru/";
+var swiftsessionid = '';
+var swiftiswinapp = 0;
+var cparea = "staff";
+var enTinyMCE = false;
+var isMainHeader = false;
+var menuhiddenfieldval = '1';
+var pagetype = 'login';
+var appAction = '';
+var finalDocHeight = 400;
+var finalHeightDiff = 0;
+
+var strOpConstants = {'OP_CONTAINS':'Contains', 'OP_NOTCONTAINS':'Doesn\'t  contain', 'OP_EQUAL':'Equal to', 'OP_NOTEQUAL':'Not equal to', 'OP_GREATER':'Greater than', 'OP_LESS':'Less than', 'OP_REGEXP':'Regular expression'};
+var swiftLanguage = {'strue':'True', 'sfalse':'False', 'name':'Name', 'title':'Title', 'value':'Value', 'engagevisitor':'Engage Visitor', 'customengagevisitor':'Custom Engage Visitor', 'inlinechat':'Inline Chat', 'url':'URL', 'vactionvariables':'Action: Variables', 'vactionvexp':'Action: Visitor Experience', 'vactionsalerts':'Action: Staff Notifications', 'loading': 'Loading...', 'pwtooshort': 'Too short', 'pwveryweak': 'Very weak', 'pwunsafeword': 'Potentially unsafe password', 'pwweak': 'Weak', 'pwmedium': 'Medium', 'pwstrong': 'Strong', 'pwverystrong': 'Very strong', 'starttypingtags': 'Start typing to insert tags...', 'search': 'Search'};
+</script>
+
+<link rel="icon" href="https://support.mfisoft.ru/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" media="all" href="https://support.mfisoft.ru/staff/index.php?/Core/Default/Compressor/css" />
+<script type="text/javascript" src="https://support.mfisoft.ru/staff/index.php?/Core/Default/Compressor/js"></script>
+<script language="Javascript" type="text/javascript">
+SWIFT.Setup('/core/default/Login/', {"basename":"https:\/\/support.mfisoft.ru\/staff\/index.php?","interfacepath":"https:\/\/support.mfisoft.ru\/staff\/","swiftpath":"https:\/\/support.mfisoft.ru\/","ip":false,"themepath":"https:\/\/support.mfisoft.ru\/__swift\/themes\/__cp\/","themepathinterface":"https:\/\/support.mfisoft.ru\/__swift\/themes\/staff\/","themepathglobal":"https:\/\/support.mfisoft.ru\/__swift\/themes\/__global\/","version":"4.79.0","product":"fusion"});
+</script>
+</head>
+<body>
+<div class="loginformcontainer">
+<center>
+<script language="Javascript" type="text/javascript">
+$(function(){
+	$('#username').focus();
+	$('#newpassword').pstrength();
+	$('#newpasswordagain').pstrength();
+});
+</script>
+<form name="loginform" action="https://support.mfisoft.ru/staff/index.php?/Core/Default/Login" method="post">
+<table width="280" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" align="center" valign="top"><img class="loginlogo" src="https://support.mfisoft.ru/__swift/themes/__cp/images/kayako-logo-gray.png" /></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+	<div class="loginformparent">
+		<div class="loginformsub">
+		
+			<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+				<tr>
+					<td>
+						<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+							<tr class="gridrow1">
+			
+								<td align="left">
+								
+								<p>Username<br />
+								<input type="text" name="username" id="username" class="logintext" value="" size="25"  /></p>
+								
+								<p>Password<br />
+								<input type="password" name="password" id="password" class="loginpassword" value=""  size="25" /></p>
+								
+								</td>
+							</tr>
+							
+														<tr class="rowerror" title="" onmouseover="" onmouseout="" onclick="">
+								<td align="center" colspan="2">Username or password is incorrect</td>
+							</tr>
+							
+							
+							
+							
+							
+							<tr class="loginsubmit">
+								<td>
+									<input type="submit" name="submitbutton" class="rebutton" value="Login" onfocus="blur();" />
+									<a href="#" class="options" onclick="javascript:toggleLoginOptions();" onfocus="blur();" />View Options &darr;</a>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="loginoptions" style=" DISPLAY: none;" id="loginoptions">
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="3">
+			<tr>
+				<td align='left' valign='top'>
+					<table width="100%" border="0" cellspacing="0" cellpadding="3" class="smalltext">
+			              <tr class="gridrow1">
+			              		<td>
+					                <p>Remember Me:<br>
+					                <label for="rememberyes"><input type="radio" name="remember" class="swiftradio" id="rememberyes" value="1" /> Yes</label><label for="rememberno"><input type="radio" name="remember" id="rememberno" value="0" checked /> No</label></p>
+					                <p>Language:<br>
+					                <select name="languagecode" class="swiftselect">
+					                						                	<option value="en-us"  selected>English (United States)</option>
+					                						                	<option value="nl" >Dutch (Standard)</option>
+					                						                	<option value="en-gb" >English (United Kingdom)</option>
+					                						                	<option value="ru" >Russian</option>
+					                						                	<option value="de" >German (Standard)</option>
+					                						                	<option value="es" >Spanish (Spain)</option>
+					                						                	<option value="pt" >Portuguese (Portugal)</option>
+					                						                	<option value="fr" >French (Standard)</option>
+					                						                	<option value="it" >Italian (Standard)</option>
+					                	
+					                	</select></p>
+					            </td>
+			              </tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+	</div>
+
+	</td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="hidden" name="_ca" value="login"/>
+<input type="hidden" name="_redirectAction" value=""/>
+</form>
+
+<br /><div class="smalltext">Helpdesk Software Powered by Kayako<br />Copyright &copy; 2001-2020 Kayako</div><br />
+</center>
+</div>
+
+
+</body>
+</html>
