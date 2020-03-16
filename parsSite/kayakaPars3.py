@@ -14,9 +14,9 @@ def auth(url):
             "_ca": "login",
             "_redirectAction": ''
             }
-    request1 = session.post(authUrl, data)
-    request2 = session.get(url)
-    return request2.text
+    r1 = session.post(authUrl, data)
+    r2 = session.get(url)
+    return r2.text
 
 
 def get_table_data(html):
