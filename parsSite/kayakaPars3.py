@@ -6,8 +6,8 @@ import csv
 def auth(url):
     authUrl = 'https://support.mfisoft.ru/staff/index.php?/Core/Default/Login'
     session = requests.Session()
-    data = {"username": 'd.seldev@RTK-IT.ru',
-            "password": 'C5Sj3z6TR',
+    data = {"username": '',
+            "password": '',
             "submitbutton": "Login",
             "remember": '0',
             "languagecode": "en-us",
